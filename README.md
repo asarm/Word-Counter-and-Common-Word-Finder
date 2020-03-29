@@ -1,1 +1,1 @@
-# Word-counter-and-commond-word-finder
+# Total Word Counter and Common Word Finder
