@@ -1,0 +1,30 @@
+{% extends 'counter/main.html' %}
+
+{% block content %}
+   <div class="row align-items-center">
+   <div class="col">
+
+   </div>
+   <div class="col">
+    <div class="container">
+          <div class="card" style="width: 42rem;">
+            <div class="card-body">
+                <h5 class="card-title">Your Text</h5>
+                <h6 class="card-subtitle mb-2 text-muted"></h6>
+                <form method="post" action="{% url 'counter' %}">
+                    {% csrf_token %}
+                    <p class="card-text"><textarea name="posted_text" class="form-control" rows="12" cols="10" id="comment">{{ text }}</textarea></p>
+                    <button type="submit" class="btn btn-primary btn-md btn-block">Count</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+   </div>
+   <div class="col">
+        <div class="container">
+
+        </div>
+   </div>
+   </div>
+{% endblock content %}

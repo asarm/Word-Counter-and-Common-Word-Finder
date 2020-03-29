@@ -1,0 +1,15 @@
+{% extends 'counter/main.html' %}
+
+{% block content %}
+<div class="card" style="width: 42rem;">
+            <a class="card-body">
+                <h5 class="card-title">Report</h5>
+                <h6 class="card-subtitle mb-2 text-muted"></h6>
+                <p class="card-text">Total Word:{{ word_count }}</p>
+                <p class="card-text">Most Used Word is '{{common_word}}' and used {{ count }} times</p>
+                <a href="{% url 'index' %}"><button type="button" class="btn btn-outline-info">Back</button></a>
+            </a>
+            </div>
+        </div>
+
+{% endblock %}
